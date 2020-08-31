@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    
     <Todos v-bind:todos="todos" />
-    
-    
+
     <!-- <datas /> -->
   </div>
 </template>
 
 <script>
-// import datas from "./components/datas.vue";
+
 import Todos from "./components/Todos";
 
 export default {
   name: "App",
   components: {
     Todos,
-    // datas,
   },
   data() {
     return {
@@ -36,11 +33,8 @@ export default {
         {
           id: 3,
           title: "Todo 3",
-          completed: false,
+          completed: true,
         },
-
-
-
       ],
     };
   },
@@ -48,12 +42,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
